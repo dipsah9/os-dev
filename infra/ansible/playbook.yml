@@ -1,0 +1,10 @@
+---
+- name: Provision Data-Science-AI Platform
+  hosts: servers
+  become: true
+
+  roles:
+    - docker
+    - kubernetes
+    - monitoring
+    - security
